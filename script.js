@@ -3,3 +3,30 @@ const userW = document.getElementById("weapon").value;
 const userP = document.getElementById("photo").value;
 const computerNames = ["SubZero", "Scorpion", "Kitana"];
 const computerWeapons = ["sword", "axe", "bow"];
+const computerPhotos = [];
+
+class Player {
+    constructor(name, weapon, photo) {
+        this.name = name;
+        this.weapon = weapon;
+        this.photo = photo;
+    }
+
+    attack(opponent){
+        let damage = this.getDamage();
+        opponent.hitpoints -= damage;
+        return damage;
+    }
+    getDamage(){
+        switch (this.weapon) {
+            case 'sword':
+                return 3;
+            case 'axe':
+                return 4;
+            case 'bow':
+                return 2;
+            default:
+                return 1;
+        }
+    }
+}
