@@ -30,3 +30,13 @@ class Player {
         }
     }
 }
+
+function start() {
+    const userPlayer = new Player(userN, userW, userP);
+    const computerPlayer = new Player(
+        computerNames[Math.floor(Math.random()* computerNames.length)],
+        computerNames[Math.floor(Math.random()* computerWeapons.length)],
+        computerNames[Math.floor(Math.random()* computerPhotos.length)]
+    )
+    
+}
