@@ -46,5 +46,13 @@ function start() {
     document.getElementById("computerWeapon").textContent = computerPlayer.weapon;
     document.getElementById("computerPhoto").src = computerPlayer.photo;
 
-    
+    document.getElementById("userAttack").onclick = () =>{
+        let damage = userPlayer.attack(computerPlayer);
+        document.getElementById('computerHp').textContent = computerPlayer.hitpoints;
+        document.getElementById('res').textContent = `You hit ${computerPlayer.name} for ${damage} damage!`;
+        if (computerPlayer.hitpoints <=0) {
+            document.getElementById('res').textContent = `${userPlayer.name} wins!`;
+            document.getElementById('userAttack').disabled = true;
+        }
+    }
 }
