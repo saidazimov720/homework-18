@@ -26,3 +26,10 @@ body{
     max-width: 100px;
     margin-bottom: 10px;
 }
+button{
+    padding: 10px 20px;
+    background-color: lightgreen;
+    color: whitesmoke;
+    border: none;
+    cursor: pointer;
+}
