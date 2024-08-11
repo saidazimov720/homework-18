@@ -13,3 +13,12 @@ body{
     max-width: 600px;
     margin: 0 auto;
 }
+.input, .fight{
+    margin-bottom: 20px;
+}
+.player{
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
