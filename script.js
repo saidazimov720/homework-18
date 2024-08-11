@@ -38,5 +38,13 @@ function start() {
         computerNames[Math.floor(Math.random()* computerWeapons.length)],
         computerNames[Math.floor(Math.random()* computerPhotos.length)]
     )
+    document.getElementById("userName").textContent = userPlayer.name;
+    document.getElementById("userWeapon").textContent = userPlayer.weapon;
+    document.getElementById("userPhoto").src = userPlayer.photo;
+
+    document.getElementById("computerName").textContent = computerPlayer.name;
+    document.getElementById("computerWeapon").textContent = computerPlayer.weapon;
+    document.getElementById("computerPhoto").src = computerPlayer.photo;
+
     
 }
