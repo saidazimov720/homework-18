@@ -9,3 +9,7 @@ body{
     text-align: center;
     padding: 20px;
 }
+.con{
+    max-width: 600px;
+    margin: 0 auto;
+}
