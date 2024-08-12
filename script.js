@@ -1,3 +1,4 @@
+"use strict";
 const userN = document.getElementById("name").value;
 const userW = document.getElementById("weapon").value;
 const userP = document.getElementById("photo").value;
