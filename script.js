@@ -53,7 +53,8 @@ function start() {
     document.getElementById("userAttack").onclick = () => {
         let damage = userPlayer.attack(computerPlayer);
         document.getElementById('computerHp').textContent = computerPlayer.hitpoints;
-        document.getElementById('res').textContent = `You hit ${computerPlayer.name} for ${damage} damage!`;
+        document.getElementById('res').textContent = `You hit ${computerPlayer.name}
+         for ${damage} damage!`;
 
         if (computerPlayer.hitpoints <= 0) {
             document.getElementById('res').textContent = `${userPlayer.name} wins!`;
@@ -61,7 +62,8 @@ function start() {
         } else {
             let computerDamage = computerPlayer.attack(userPlayer);
             document.getElementById('userHp').textContent = userPlayer.hitpoints;
-            document.getElementById('res').textContent += ` ${computerPlayer.name} hit you for ${computerDamage} damage!`;
+            document.getElementById('res').textContent += ` ${computerPlayer.name} 
+            hit you for ${computerDamage} damage!`;
         }
         if (userPlayer.hitpoints <= 0) {
             document.getElementById('res').textContent = `${computerPlayer.name} wins!`;
