@@ -4,7 +4,7 @@ const userP = document.getElementById("photo").value;
 
 const computerNames = ["SubZero", "Scorpion", "Kitana"];
 const computerWeapons = ["sword", "axe", "bow"];
-const computerPhotos = ["url1", "url2", "url3"];
+const computerPhotos = [];
 
 class Player {
     constructor(name, weapon, photo) {
@@ -54,7 +54,7 @@ function start() {
         let damage = userPlayer.attack(computerPlayer);
         document.getElementById('computerHp').textContent = computerPlayer.hitpoints;
         document.getElementById('res').textContent = `You hit ${computerPlayer.name} for ${damage} damage!`;
-        
+
         if (computerPlayer.hitpoints <= 0) {
             document.getElementById('res').textContent = `${userPlayer.name} wins!`;
             document.getElementById('userAttack').disabled = true;
