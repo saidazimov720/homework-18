@@ -46,6 +46,10 @@ button:disabled{
     background-color: white;
 }
 
+#res{
+    color: whitesmoke;
+}
+
 audio{
     display: none;
 }
